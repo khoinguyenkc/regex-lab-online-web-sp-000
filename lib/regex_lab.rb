@@ -41,7 +41,7 @@ def words_five_letters_long(text)
   #i can totally get each word check the length without regex but thats cheating lol
   #think i just found it: \W\w{5}\W
   #nope. problem: if i have "extreme briny crepe parking". first it find " briny " then next it look it crepe, it sees "crepe " which doesn't have the non-word charcter in the front. its dumb like thats
-  #if u have the first word 5 letter it also won't detect it. 
+  #if u have the first word 5 letter it also won't detect it.
   #turns out the answer is simple. it's the "word boundary" tool \b
   return text.scan(/\b\w{5}\b/)
   
