@@ -38,7 +38,11 @@ print words_starting_with_un_and_ending_with_ing("hi unering unefadszing gaga")
 
 def words_five_letters_long(text)
   #i think here they define words as abcd no symbols and stuff
-
+  #i can totally get each word check the length without regex but thats cheating lol
+  #think i just found it: \W\w{5}\W
+  #must be surround by nonword stuff. that means surround by space or puncuttion etc..
+  #otherwise it'll be surround by abc like if u have beyonce it will say i found  beyon. ridic.
+  puts text.scan(/\W\w{5}\W/)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
