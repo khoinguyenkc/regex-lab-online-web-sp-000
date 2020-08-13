@@ -44,11 +44,10 @@ def words_five_letters_long(text)
   #if u have the first word 5 letter it also won't detect it.
   #turns out the answer is simple. it's the "word boundary" tool \b
   return text.scan(/\b\w{5}\b/)
-  
 end
 puts "hola landmark"
 #words_five_letters_long("i am plain and filled with strawberries plain. plain? ")
-words_five_letters_long("extreme briny crepe parking snaps grouping snafu round dog be fork spoon")
+print words_five_letters_long("extreme briny crepe parking snaps grouping snafu round dog be fork spoon")
 def first_word_capitalized_and_ends_with_punctuation?(text)
   #\A[A-Z]
   #([[:punct:]]\z)
