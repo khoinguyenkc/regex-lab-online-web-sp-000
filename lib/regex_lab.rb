@@ -87,7 +87,7 @@ def valid_phone_number?(phone)
     end
 
     # category 2
-  elsif phone.scan(/(\d+)\D(\d+)/)
+  elsif phone.scan(/(\d+)\D(\d+)/) != []
     puts "category 2"
     #this scans the (800)4261134
     result = phone.scan(/(\d+)\D(\d+)/)
@@ -99,7 +99,7 @@ def valid_phone_number?(phone)
     end
 
     # category 3
-  elsif phone.scan(/\d{10}/)
+  elsif phone.scan(/\d{10}/) != []
         puts "category 3"
     #this scans the 1234567890 10digit straight string
     return true
