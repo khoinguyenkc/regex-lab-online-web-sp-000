@@ -44,7 +44,9 @@ def words_five_letters_long(text)
   #otherwise it'll be surround by abc like if u have beyonce it will say i found  beyon. ridic.
   puts text.scan(/\W\w{5}\W/)
 end
+puts "hola landmark"
 words_five_letters_long("i am plain and filled with strawberries")
+
 def first_word_capitalized_and_ends_with_punctuation?(text)
   #\A[A-Z]
   #([[:punct:]]\z)
