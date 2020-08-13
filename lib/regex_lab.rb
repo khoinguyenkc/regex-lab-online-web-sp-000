@@ -46,7 +46,7 @@ def words_five_letters_long(text)
 end
 puts "hola landmark"
 words_five_letters_long("i am plain and filled with strawberries plain. plain? ")
-
+words_five_letters_long("extreme briny crepe parking snaps grouping snafu round dog be fork spoon")
 def first_word_capitalized_and_ends_with_punctuation?(text)
   #\A[A-Z]
   #([[:punct:]]\z)
