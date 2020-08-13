@@ -42,7 +42,8 @@ def words_five_letters_long(text)
   #think i just found it: \W\w{5}\W
   #must be surround by nonword stuff. that means surround by space or puncuttion etc..
   #otherwise it'll be surround by abc like if u have beyonce it will say i found  beyon. ridic.
-  puts text.scan(/\W\w{5}\W/)
+  x =  text.scan(/\W\w{5}\W/)
+  puts x.length
 end
 puts "hola landmark"
 words_five_letters_long("i am plain and filled with strawberries plain. plain? ")
