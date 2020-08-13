@@ -45,7 +45,7 @@ def words_five_letters_long(text)
   puts text.scan(/\W\w{5}\W/)
 end
 puts "hola landmark"
-words_five_letters_long("i am plain and filled with strawberries")
+words_five_letters_long("i am plain and filled with strawberries plain. plain? ")
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
   #\A[A-Z]
